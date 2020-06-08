@@ -23,10 +23,12 @@ build\build-me.bat
 
 Uses CMake to generate the build files of your choice.
 
+```
   cd build  # do not build in the root
   cmake -S .. [options] [-A Win32|x64]
   cmake --build . --config Release
-  
+```
+
 The is a build-me.bat file, which can maybe be modified to suit your environment...
 
 ## License
@@ -38,9 +40,9 @@ The is a build-me.bat file, which can maybe be modified to suit your environment
 
 Use -? to view the help.
 
-Essentially I ise it to create PC navigation batch files.
+Essentially I use it to create PC navigation batch files.
 
-A cmd of `cwd32 "-cst cwd32 src bld" c:\mdos\hcwd.bat"` will produce -
+A cmd of `cwd32 "-cst cwd32 src bld" c:\mdos\hcwd.bat` will produce -
 
 ```
 @D:
