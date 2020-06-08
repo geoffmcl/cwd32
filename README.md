@@ -38,8 +38,6 @@ The is a build-me.bat file, which can maybe be modified to suit your environment
    
 ## Usage
 
-Use -? to view the help.
-
 Essentially I use it to create PC navigation batch files.
 
 A cmd of `cwd32 "-cst cwd32 src bld" c:\mdos\hcwd.bat` will produce -
@@ -49,6 +47,31 @@ A cmd of `cwd32 "-cst cwd32 src bld" c:\mdos\hcwd.bat` will produce -
 @CD \UTILS\cwd32\build
 @call st cwd32 src bld
 ```
+
+Since `C:\MDOS` is in my `PATH` environment variable, I can, from anywhere, type `hcwd` and be back in my cwd32 build directory...
+
+Use -?, --help, or any invalid option, to view the brief help.
+
+```
+Informatique Rouge *** CURRENT WORK DIRECTORY UTILITY *** 7 June, 2020 (MSVC16.x64)
+ Purpose : Writes the current Drive and Directory to output
+ Usage   : CWD32 [Options] [FileName]
+ Options: Each preceded by / or - and space separated.
+ -@[-|+]   Add an @ character to commands. Default is yes. -@- to not...
+ -a        Append to any existing file, if any.
+ -b        Bare CWD, single line.
+ -cName    Add 'Call Name' to output (Can be repeated).
+ -o        Overwrite any existing output file.
+ -sName    Add 'Set PROJ=Name' to output.
+ -v[0|9]   Silent or very verbal.
+ -l        Single line output.
+ -8        Output DOS 8.3 format.
+ Notes   : A -?, --help, or any invalid option, will produce this help.
+ Compiled on Jun  8 2020, at 19:28:47
+ERROR: Invalid command switch! [--help]?
+```
+
+Note, this app was started sometime before 1994, in Intel assembler, and later re-written in C++.
 
 Have FUN... Geoff.
 

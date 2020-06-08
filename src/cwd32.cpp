@@ -1,7 +1,7 @@
 /*\
  * cwd32.cpp
  *
- * Copyright (c) 2020 - Geoff R. McLane
+ * Copyright (c) before 1994 ... 2020 - Geoff R. McLane
  * Licence: GNU GPL version 2
  *
 \*/
@@ -25,12 +25,12 @@ TCHAR    g_szTmpBuf[1024];
 #define  sprtf    printf
 
 TCHAR szHelpMsg[] =
-"Informatique Rouge *** CURRENT WORK DIRECTORY UTILITY 32 *** "
+"Informatique Rouge *** CURRENT WORK DIRECTORY UTILITY *** "
 APP_VDATE
 MEOR
 " Purpose : Writes the current Drive and Directory to output" MEOR
-" Usage   : CWD32 [FileName] [Switches]" MEOR
-" Switches: Each preceded by / or - and space separated." MEOR
+" Usage   : CWD32 [Options] [FileName]" MEOR
+" Options: Each preceded by / or - and space separated." MEOR
 " -@[-|+]   Add an @ character to commands. Default is yes. -@- to not..." MEOR
 " -a        Append to any existing file, if any." MEOR
 " -b        Bare CWD, single line." MEOR
@@ -40,7 +40,7 @@ MEOR
 " -v[0|9]   Silent or very verbal." MEOR
 " -l        Single line output." MEOR
 " -8        Output DOS 8.3 format." MEOR
-" Notes   : A ? anywhere in the command will produce this help." MEOR;
+" Notes   : A -?, --help, or any invalid option, will produce this help." MEOR;
 
 static char * szCDate = __DATE__;
 static char * szCTime = __TIME__;
